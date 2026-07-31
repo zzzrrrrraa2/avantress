@@ -460,7 +460,10 @@ strong{font-weight:500}
   .nav a:last-child{border-bottom:0}
   .hero{padding:28px 0 52px}
   .hero-grid{grid-template-columns:1fr;gap:28px}
-  .hero-portrait{width:min(100%,300px);padding:16px 0 0;border-top:var(--rule-section);border-left:0}
+  .hero-portrait{
+    width:min(92%,340px);margin-inline:auto;padding:16px 0 0;
+    border-top:var(--rule-section);border-left:0;
+  }
   .signature{left:auto;right:-8px;bottom:18px;width:min(178px,62%)}
   .h-display{font-size:clamp(2.75rem,12.8vw,3.65rem);line-height:.96}
   .lede{margin-top:20px;padding-top:16px;font-size:1.04rem}
