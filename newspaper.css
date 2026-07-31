@@ -3,9 +3,9 @@
    homepage can remain untouched while the editorial direction is explored. */
 
 .newspaper-concept{
-  --paper:#f2eee3;
-  --paper-2:#ebe5d7;
-  --card:#f7f3e9;
+  --paper:#eee8da;
+  --paper-2:#e4ddcd;
+  --card:#f1ebdc;
   --ink:#171714;
   --ink-2:#35342f;
   --ink-3:#666157;
@@ -17,17 +17,25 @@
   --wrap:1240px;
   --sect-y:clamp(76px,8vw,118px);
   background-color:var(--paper);
-  background-image:repeating-linear-gradient(
-    0deg,
-    rgba(40,35,25,.018) 0,
-    rgba(40,35,25,.018) 1px,
-    transparent 1px,
-    transparent 4px
-  );
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      rgba(47,40,28,.026) 0,
+      rgba(47,40,28,.026) 1px,
+      transparent 1px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(47,40,28,.012) 0,
+      rgba(47,40,28,.012) 1px,
+      transparent 1px,
+      transparent 7px
+    );
   color:var(--ink);
 }
 
-.newspaper-concept .section-tint{background:rgba(225,218,202,.44)}
+.newspaper-concept .section-tint{background:rgba(218,210,193,.48)}
 .newspaper-concept .section-ink{background:var(--ink)}
 .newspaper-concept .panel{background:rgba(247,243,233,.62);border-color:var(--ink)}
 .newspaper-concept .h-display,
@@ -47,7 +55,7 @@
 /* Masthead */
 .newspaper-concept .site-header{
   position:relative;
-  background:rgba(242,238,227,.96);
+  background:rgba(238,232,218,.97);
   border:0;
 }
 .newspaper-concept .header-inner{
@@ -169,8 +177,8 @@
   border-color:var(--ink);
 }
 .newspaper-concept .hero-cta .btn{
-  background:var(--stamp);
-  border-color:var(--stamp);
+  background:var(--green);
+  border-color:var(--green);
   color:#fffaf0;
   font-family:var(--mono);
   font-size:.72rem;
@@ -279,7 +287,7 @@
   border-top:0;
 }
 .newspaper-concept .statement{
-  background:var(--stamp);
+  background:var(--green);
   border-top:4px double var(--paper);
   border-bottom:4px double var(--paper);
 }
