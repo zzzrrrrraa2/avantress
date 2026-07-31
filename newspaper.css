@@ -118,7 +118,7 @@ strong{font-weight:500}
 .lang-btn:active{background:var(--green-light)}
 .lang-btn.is-active{background:var(--ink);border-color:var(--ink);color:var(--paper)}
 .nav{border-bottom:var(--rule-major)}
-.nav-inner{display:flex;align-items:center;justify-content:center;gap:clamp(16px,3vw,38px);min-height:48px}
+.nav-inner{display:flex;align-items:center;justify-content:flex-start;gap:clamp(16px,3vw,38px);min-height:48px}
 .nav a{
   display:flex;align-items:center;gap:7px;min-height:44px;
   font-family:var(--mono);font-size:.74rem;letter-spacing:.06em;text-decoration:none;text-transform:uppercase;
