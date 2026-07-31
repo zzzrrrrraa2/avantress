@@ -456,7 +456,7 @@ strong{font-weight:500}
   }
   .nav.is-open{visibility:visible;opacity:1;pointer-events:auto;transform:none}
   .nav-inner{display:block;padding-top:8px;padding-bottom:12px}
-  .nav a{justify-content:space-between;min-height:48px;border-bottom:var(--rule-item);font-size:.8rem}
+  .nav a{justify-content:flex-start;gap:16px;min-height:48px;border-bottom:var(--rule-item);font-size:.8rem}
   .nav a:last-child{border-bottom:0}
   .hero{padding:28px 0 52px}
   .hero-grid{display:flex;flex-direction:column;gap:0}
