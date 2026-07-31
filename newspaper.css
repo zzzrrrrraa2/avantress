@@ -3,11 +3,11 @@
    homepage can remain untouched while the editorial direction is explored. */
 
 .newspaper-concept{
-  --paper:#eee8da;
-  --paper-2:#e4ddcd;
+  --paper:#f1efe8;
+  --paper-2:#e8e5dc;
   --sage:var(--paper-2);
   --sage-2:var(--paper-2);
-  --card:#f1ebdc;
+  --card:#f6f3eb;
   --ink:#171714;
   --ink-2:var(--ink);
   --ink-3:var(--ink);
@@ -211,7 +211,7 @@
 }
 .newspaper-concept .trustbar-inner span{
   color:var(--paper);
-  border-color:rgba(238,232,218,.25);
+  border-color:rgba(241,239,232,.25);
 }
 .newspaper-concept .trustbar-inner span::before{
   width:4px;
@@ -304,10 +304,10 @@
 .newspaper-concept .quote blockquote{font-size:1.28rem}
 
 .newspaper-concept .contact-grid{margin-top:46px}
-.newspaper-concept .contact-form{border-top:4px double rgba(238,232,218,.7)}
+.newspaper-concept .contact-form{border-top:4px double rgba(241,239,232,.7)}
 .newspaper-concept .section-ink .sec-num{color:var(--green)}
 .newspaper-concept .section-ink .sec-kicker{color:var(--paper)}
-.newspaper-concept .section-ink .sec-head{border-color:rgba(238,232,218,.65)}
+.newspaper-concept .section-ink .sec-head{border-color:rgba(241,239,232,.65)}
 .newspaper-concept .site-footer{border-top:4px double var(--ink)}
 
 @media (max-width:1080px){
