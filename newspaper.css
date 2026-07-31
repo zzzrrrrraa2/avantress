@@ -107,7 +107,7 @@ strong{font-weight:500}
 .logo{display:flex;align-items:center;text-decoration:none}
 .logo-art{
   display:block;width:clamp(190px,20vw,260px);aspect-ratio:5.45/1;
-  background:url('assets/logo-selected/aventress-primary-transparent.png') center 49% / 150% auto no-repeat;
+  background:url('assets/logo-selected/aventress-primary-transparent.png') center 49% / 142% auto no-repeat;
 }
 .logo-text{font-family:var(--serif);font-size:clamp(2.25rem,3.4vw,3.2rem);line-height:1;letter-spacing:-.045em}
 .logo-meta{font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase}
