@@ -106,12 +106,12 @@ strong{font-weight:500}
 }
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none}
 .logo-art{
-  display:block;width:clamp(190px,20vw,260px);aspect-ratio:5.45/1;
+  display:block;width:clamp(175px,18vw,225px);aspect-ratio:5.45/1;
   background:url('assets/logo-selected/aventress-primary-transparent.png') center 49% / 142% auto no-repeat;
 }
 .logo-text{font-family:var(--serif);font-size:clamp(2.25rem,3.4vw,3.2rem);line-height:1;letter-spacing:-.045em}
 .logo-meta{
-  align-self:flex-end;margin-bottom:9px;
+  align-self:flex-end;margin-bottom:0;
   font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;
 }
 .header-actions{display:flex;justify-content:flex-end;align-items:center;gap:var(--space-3)}
@@ -454,7 +454,7 @@ strong{font-weight:500}
   html{scroll-padding-top:68px}
   .site-header{position:sticky;top:0}
   .masthead{min-height:68px;border-bottom:var(--rule-major)}
-  .logo-art{width:clamp(140px,43vw,185px)}
+  .logo-art{width:clamp(130px,38vw,165px)}
   .logo-text{font-size:1.8rem}
   .logo-meta{display:none}
   .header-actions{gap:4px}
