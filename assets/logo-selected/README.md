@@ -6,6 +6,10 @@
 - `aventress-with-descriptor.png` — matching wordmark with
   `ADMINISTRATION · BACK OFFICE` beneath it. Intended for documents, social
   profiles, presentations, and placements where the service needs explaining.
+- `aventress-primary-transparent.png` — transparent-background primary logo
+  used by the website header.
+- `aventress-with-descriptor-transparent.png` — transparent-background extended
+  lockup for use on textured or coloured surfaces.
 
 Both files preserve the custom capital `A` treatment from concept 14 while
 using a normal lowercase `v`.
