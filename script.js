@@ -21,6 +21,9 @@ const PL_DICT = {
   'nav.faq': 'FAQ',
   'nav.contact': 'Kontakt',
   'nav.cta': 'Napisz do mnie',
+  'compare.alternative': 'Alternatywa',
+  'compare.limit': 'Typowe ograniczenie',
+  'compare.difference': 'Różnica Aventress',
 
   'hero.eyebrow': 'Stała obsługa administracyjna i back office · Londyn',
   'hero.h1a': 'Ty prowadzisz firmę.',
@@ -32,6 +35,7 @@ const PL_DICT = {
   'proof.2.q': '„[Placeholder — jedna linia z innej branży. Liczba działa lepiej niż przymiotnik.]"',
   'proof.2.n': '[Imię] · [Firma, branża]',
   'hero.cta': 'Porozmawiajmy — 20 minut',
+  'newspaper.hero.cta': 'Porozmawiajmy',
   'hero.ctaSub': 'Bez przygotowania i bez zobowiązań. Zwykła rozmowa o tym, co ląduje na Twoim biurku.',
   'hero.photo': '[Zdjęcie — portret, kadr pionowy 4:5, naturalne światło, bez stocku]',
   'hero.photoCap': '[Imię Nazwisko] — Aventress Ltd, Londyn',
@@ -120,7 +124,7 @@ const PL_DICT = {
 
   'svc.disc.label': 'Czego nie robię',
   'svc.disc.h': 'Pracuję obok Twojego księgowego, nigdy zamiast niego.',
-  'svc.disc.p': 'Przygotowuję, porządkuję, monitoruję i kontaktuję się z HMRC oraz Companies House. Nie składam deklaracji, nie zatwierdzam sprawozdań i nie doradzam podatkowo — robi to Twoje biuro rachunkowe, a ja ułatwiam mu pracę, przekazując komplet dokumentów na czas.',
+  'svc.disc.p': 'Przygotowuję, porządkuję i kontaktuję się z urzędami. Twój księgowy składa deklaracje, zatwierdza sprawozdania i doradza podatkowo.',
 
   'why.eyebrow': 'Porównanie',
   'why.h2': 'Cztery opcje, które masz teraz na stole',
@@ -143,6 +147,7 @@ const PL_DICT = {
   'why.4.fine': '[Placeholder — jedna linia: podaj aktualne kwoty kar Companies House i HMRC, żeby to ukonkretnić.]',
   'why.badge': 'Aventress',
   'why.us.h': 'Administracja ze znajomością przepisów, jedna konkretna osoba, stała opłata miesięczna',
+  'newspaper.why.us.h': 'Administracja ze znajomością przepisów, jedna konkretna osoba',
   'why.us.p': '[Placeholder — 2 zdania: pozycjonowanie prostym językiem. Stałe wsparcie od kogoś, kto zna administrację spółek w UK, za ułamek kosztu etatu i bez okresu wdrożenia.]',
   'why.us.l1': 'Wiem, czym różni się CS01 od CT600 — nie trzeba mnie wdrażać ani pilnować.',
   'why.us.l2': 'Stała współpraca miesięczna, a nie godziny, które trzeba dokupywać.',
@@ -150,6 +155,7 @@ const PL_DICT = {
 
   'statement.line': '[Placeholder — jedna linia, powiedziana wprost. Myśl, z którą czytelnik ma zostać — np. że papiery to nie firma, tylko coś, co się firmą udaje.]',
   'statement.cta': 'Porozmawiajmy →',
+  'newspaper.statement.cta': 'Sprawdź, czy to pasuje →',
 
   'about.eyebrow': 'Z kim będziesz pracować',
   'about.h2': 'Nazywam się [Imię Nazwisko]',
@@ -193,6 +199,7 @@ const PL_DICT = {
 
   'contact.eyebrow': 'Porozmawiajmy',
   'contact.h2': 'Powiedz, co masz na głowie.<br>Dwadzieścia minut, bez zobowiązań.',
+  'newspaper.contact.h2': 'Powiedz, co masz na głowie.',
   'contact.lede': '[Placeholder — 1–2 zdania: bez przygotowania, bez dokumentów, bez sprzedażowego pitchu. Jeśli to nie jest dopasowanie, usłyszysz to na rozmowie.]',
   'contact.s1': 'Opowiadasz, co dziś ląduje na Twoim biurku.',
   'contact.s2': 'Mówię, co bym przejęła — i czego bym nie ruszała.',
@@ -206,13 +213,16 @@ const PL_DICT = {
 
   'form.head': 'Napisz wiadomość',
   'form.name': 'Imię i nazwisko',
+  'form.companyLabel': 'Firma',
   'form.company': 'Firma <span class="opt">(i mniej więcej ile osób)</span>',
-  'form.optional': '(i mniej więcej ile osób)',
+  'form.optional': '(opcjonalnie)',
   'form.email': 'E-mail',
   'form.msg': 'Co oddałbyś w pierwszej kolejności?',
   'form.msgPh': '[Placeholder — np. terminy i Companies House plus fakturowanie — księgowego już mamy]',
-  'form.submit': 'Wyślij wiadomość',
-  'form.note': '[Placeholder — jedna linia: odpowiadam osobiście, w zadeklarowanym czasie reakcji. Bez newslettera i bez sekwencji maili.]',
+  'form.requiredNote': 'Pola wymagane są oznaczone *',
+  'form.submit': 'Sprawdź wiadomość',
+  'form.loading': 'Sprawdzam…',
+  'form.note': 'Ten formularz demonstracyjny nie wysyła danych. Przed publikacją należy podłączyć bezpieczny punkt końcowy.',
 
   'footer.tag': '[Placeholder — jedna linia: stała obsługa administracyjna i back office dla małych spółek LTD w UK. Londyn, po polsku i po angielsku.]',
   'footer.company': 'Dane spółki',
@@ -230,14 +240,27 @@ const PL_DICT = {
 const STATUS = {
   en: {
     missing: 'Please fill in the highlighted fields.',
-    sent: 'Thank you — I\'ll be in touch within one working day.',
-    demo: '[Demo] The form is not wired up to an inbox yet.'
+    name: 'Enter your name.',
+    emailMissing: 'Enter your email address.',
+    emailInvalid: 'Enter an email address in the format name@example.com.',
+    checking: 'Checking your message…',
+    demo: 'Demo only — your message is valid, but it has not been sent.',
+    network: 'The message could not be sent. Please use the email address or try again.'
   },
   pl: {
     missing: 'Uzupełnij zaznaczone pola.',
-    sent: 'Dziękuję — odezwę się w ciągu jednego dnia roboczego.',
-    demo: '[Demo] Formularz nie jest jeszcze podpięty do skrzynki e-mail.'
+    name: 'Wpisz imię i nazwisko.',
+    emailMissing: 'Wpisz adres e-mail.',
+    emailInvalid: 'Wpisz adres e-mail w formacie nazwa@przyklad.pl.',
+    checking: 'Sprawdzam wiadomość…',
+    demo: 'Tylko demonstracja — wiadomość jest poprawna, ale nie została wysłana.',
+    network: 'Nie udało się wysłać wiadomości. Użyj adresu e-mail lub spróbuj ponownie.'
   }
+};
+
+const MENU_LABELS = {
+  en: { open: 'Open menu', close: 'Close menu' },
+  pl: { open: 'Otwórz menu', close: 'Zamknij menu' }
 };
 
 /* --------------------------------------------------------------------------
@@ -270,8 +293,15 @@ function setLang(lang) {
 
   document.documentElement.lang = lang;
   document.querySelectorAll('.lang-btn').forEach(b => {
-    b.classList.toggle('is-active', b.dataset.lang === lang);
+    const selected = b.dataset.lang === lang;
+    b.classList.toggle('is-active', selected);
+    b.setAttribute('aria-pressed', String(selected));
   });
+  const burger = document.querySelector('.burger');
+  if (burger) {
+    const open = burger.getAttribute('aria-expanded') === 'true';
+    burger.setAttribute('aria-label', MENU_LABELS[lang][open ? 'close' : 'open']);
+  }
 
   try { localStorage.setItem('aventress-lang', lang); } catch (e) { /* private mode */ }
 }
@@ -300,14 +330,62 @@ document.addEventListener('DOMContentLoaded', () => {
   /* mobile nav */
   const burger = document.querySelector('.burger');
   const nav = document.querySelector('.nav');
-  burger.addEventListener('click', () => {
-    const open = nav.classList.toggle('is-open');
-    burger.setAttribute('aria-expanded', String(open));
-  });
-  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-    nav.classList.remove('is-open');
-    burger.setAttribute('aria-expanded', 'false');
-  }));
+  const main = document.querySelector('main');
+  const footer = document.querySelector('.site-footer');
+
+  if (burger && nav) {
+    const closeMenu = (returnFocus = false) => {
+      nav.classList.remove('is-open');
+      burger.setAttribute('aria-expanded', 'false');
+      burger.setAttribute('aria-label', MENU_LABELS[currentLang].open);
+      document.body.classList.remove('menu-open');
+      if (main) main.inert = false;
+      if (footer) footer.inert = false;
+      if (returnFocus) burger.focus();
+    };
+
+    const openMenu = () => {
+      nav.classList.add('is-open');
+      burger.setAttribute('aria-expanded', 'true');
+      burger.setAttribute('aria-label', MENU_LABELS[currentLang].close);
+      document.body.classList.add('menu-open');
+      if (main) main.inert = true;
+      if (footer) footer.inert = true;
+      burger.focus();
+    };
+
+    burger.addEventListener('click', () => {
+      const open = burger.getAttribute('aria-expanded') === 'true';
+      if (open) closeMenu(true);
+      else openMenu();
+    });
+
+    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => closeMenu()));
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && burger.getAttribute('aria-expanded') === 'true') {
+        event.preventDefault();
+        closeMenu(true);
+      }
+      if (event.key === 'Tab' && burger.getAttribute('aria-expanded') === 'true') {
+        const focusable = [...document.querySelectorAll('.site-header a, .site-header button:not([disabled])')]
+          .filter(element => element.offsetParent !== null);
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault();
+          last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault();
+          first.focus();
+        }
+      }
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 760 && burger.getAttribute('aria-expanded') === 'true') closeMenu();
+    });
+  }
 
   /* scroll reveal */
   const targets = document.querySelectorAll(
@@ -353,17 +431,62 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('contactForm');
   const status = document.getElementById('formStatus');
 
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const msgs = STATUS[currentLang];
-    let ok = true;
+  if (form && status) {
+    const submit = form.querySelector('button[type="submit"]');
+
+    const fieldMessage = (input, msgs) => {
+      if (input.id === 'f-name' && input.value.trim() === '') return msgs.name;
+      if (input.id === 'f-email' && input.value.trim() === '') return msgs.emailMissing;
+      if (input.type === 'email' && !input.validity.valid) return msgs.emailInvalid;
+      return '';
+    };
+
+    const validateField = (input) => {
+      const message = fieldMessage(input, STATUS[currentLang]);
+      const error = document.getElementById(`${input.id}-error`);
+      input.setAttribute('aria-invalid', String(Boolean(message)));
+      input.closest('.field').classList.toggle('has-error', Boolean(message));
+      if (error) error.textContent = message;
+      return !message;
+    };
+
+    const setFormState = (state, message) => {
+      form.classList.toggle('is-submitting', state === 'submitting');
+      form.setAttribute('aria-busy', String(state === 'submitting'));
+      submit.disabled = state === 'submitting';
+      status.className = `form-status${state ? ` is-${state}` : ''}`;
+      status.textContent = message || '';
+    };
 
     form.querySelectorAll('[required]').forEach(input => {
-      const valid = input.value.trim() !== '' && (input.type !== 'email' || /\S+@\S+\.\S+/.test(input.value));
-      input.closest('.field').classList.toggle('has-error', !valid);
-      if (!valid) ok = false;
+      input.addEventListener('blur', () => validateField(input));
+      input.addEventListener('input', () => {
+        if (input.getAttribute('aria-invalid') === 'true') validateField(input);
+        if (status.classList.contains('is-error')) setFormState('', '');
+      });
     });
 
-    status.textContent = ok ? msgs.sent + ' ' + msgs.demo : msgs.missing;
-  });
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const required = [...form.querySelectorAll('[required]')];
+      const valid = required.map(validateField).every(Boolean);
+
+      if (!valid) {
+        setFormState('error', STATUS[currentLang].missing);
+        required.find(input => input.getAttribute('aria-invalid') === 'true')?.focus();
+        return;
+      }
+
+      setFormState('submitting', STATUS[currentLang].checking);
+      window.setTimeout(() => {
+        const simulateFailure = form.elements.email.value.toLowerCase().endsWith('@network.test');
+        if (simulateFailure) {
+          setFormState('error', STATUS[currentLang].network);
+          form.elements.email.focus();
+        } else {
+          setFormState('demo', STATUS[currentLang].demo);
+        }
+      }, 350);
+    });
+  }
 });
