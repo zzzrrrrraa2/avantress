@@ -300,11 +300,14 @@ strong{font-weight:500}
 .statement-inner{display:flex;align-items:flex-end;justify-content:space-between;gap:32px}
 .statement-line{max-width:28ch;font-size:clamp(1.7rem,3.2vw,2.65rem);line-height:1.16;letter-spacing:-.025em}
 .statement-cta{
-  min-height:44px;display:inline-flex;align-items:center;flex:0 0 auto;
-  font-family:var(--mono);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;
-  text-underline-offset:6px;
+  min-height:52px;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;
+  padding:14px 22px;border:1px solid var(--paper);background:var(--paper);color:var(--ink);
+  box-shadow:4px 4px 0 #c7bd91;font-family:var(--mono);font-size:.8rem;font-weight:500;
+  letter-spacing:.08em;text-decoration:none;text-transform:uppercase;
+  transition:background var(--transition),color var(--transition),box-shadow var(--transition),transform var(--transition);
 }
-.statement-cta:hover{color:#d5c995;text-decoration-thickness:2px}
+.statement-cta:hover{background:#c7bd91;border-color:#c7bd91;color:var(--ink);box-shadow:2px 2px 0 var(--paper);transform:translate(2px,2px)}
+.statement-cta:active{box-shadow:none;transform:translate(4px,4px)}
 
 /* About and FAQ */
 .about-grid{
@@ -496,6 +499,7 @@ strong{font-weight:500}
   .statement{padding:34px 0}
   .statement-inner{align-items:flex-start;flex-direction:column;gap:18px}
   .statement-line{font-size:clamp(1.65rem,8.5vw,2.2rem)}
+  .statement-cta{width:100%}
   .about-grid{grid-template-columns:1fr;gap:28px}
   .about-photo{max-width:560px}
   .about-copy{display:contents}
