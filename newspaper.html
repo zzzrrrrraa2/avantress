@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aventress Ltd — newspaper concept</title>
+<meta name="description" content="Ongoing administrative and back-office support for UK limited companies with 2–20 staff. HMRC and Companies House deadlines tracked, documents prepared for your accountant, invoicing and office admin handled. London, in English and Polish.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=15">
+<link rel="stylesheet" href="newspaper.css?v=1">
+</head>
+<body class="newspaper-concept">
+
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a class="logo" href="#top">
+      <span class="logo-mark" aria-hidden="true">A</span>
+      <span class="logo-text">Aventress</span>
+      <span class="logo-meta">Ltd · London</span>
+    </a>
+
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#fit"><span class="n-num">01</span><span data-i18n="nav.fit">Is this you</span></a>
+      <a href="#how"><span class="n-num">02</span><span data-i18n="nav.how">How it works</span></a>
+      <a href="#services"><span class="n-num">03</span><span data-i18n="nav.services">What's included</span></a>
+      <a href="#compare"><span class="n-num">04</span><span data-i18n="nav.why">Compare</span></a>
+      <a href="#about"><span class="n-num">05</span><span data-i18n="nav.about">About</span></a>
+      <a href="#faq"><span class="n-num">06</span><span data-i18n="nav.faq">FAQ</span></a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang" role="group" aria-label="Language / Język">
+        <button type="button" class="lang-btn is-active" data-lang="en">EN</button>
+        <span class="lang-sep" aria-hidden="true">/</span>
+        <button type="button" class="lang-btn" data-lang="pl">PL</button>
+      </div>
+      <a class="btn btn-ink btn-sm" href="#contact" data-i18n="nav.cta">Get in touch</a>
+      <button class="burger" type="button" aria-label="Menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ 1. HERO ============ -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="kicker"><span class="kicker-rule" aria-hidden="true"></span><span data-i18n="hero.eyebrow">Ongoing admin & back office · London</span></p>
+
+      <h1 class="h-display">
+        <span data-i18n="hero.h1a">You run the business.</span><br>
+        <span class="underline-brush" data-i18n="hero.h1b">I run the paperwork.</span>
+      </h1>
+
+      <p class="lede" data-i18n="hero.lede">
+        [Placeholder — 2 sentences naming exactly who this is for: UK limited companies with
+        2–20 staff that already have an accountant but nobody running the day-to-day admin.
+        Name the sectors — construction, clinics, family firms.]
+      </p>
+
+      <ul class="micro-proof">
+        <li>
+          <span class="mp-avatar">
+            <img src="assets/client-1.jpg" alt="" onerror="this.style.display='none';this.parentNode.classList.add('is-empty')">
+            <span class="mp-ph" data-i18n="proof.ph">photo</span>
+          </span>
+          <div>
+            <p class="mp-quote" data-i18n="proof.1.q">“[Placeholder — one line, one outcome. What stopped happening once she took it over.]”</p>
+            <p class="mp-meta" data-i18n="proof.1.n">[Name] · [Business, sector]</p>
+          </div>
+        </li>
+        <li>
+          <span class="mp-avatar">
+            <img src="assets/client-2.jpg" alt="" onerror="this.style.display='none';this.parentNode.classList.add('is-empty')">
+            <span class="mp-ph" data-i18n="proof.ph">photo</span>
+          </span>
+          <div>
+            <p class="mp-quote" data-i18n="proof.2.q">“[Placeholder — one line from a different sector. A number beats an adjective.]”</p>
+            <p class="mp-meta" data-i18n="proof.2.n">[Name] · [Business, sector]</p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="hero-cta">
+        <a class="btn btn-ink" href="#contact" data-i18n="hero.cta">Let's talk it through — 20 minutes</a>
+        <span class="cta-sub" data-i18n="hero.ctaSub">No preparation, no obligation. Just a conversation about what's landing on your desk.</span>
+      </div>
+    </div>
+
+    <figure class="hero-portrait">
+      <div class="photo-frame photo-portrait">
+        <img src="assets/portrait.jpg" alt="" onerror="this.style.display='none';this.parentNode.classList.add('is-empty')">
+        <span class="photo-ph" data-i18n="hero.photo">[Photo — portrait, 4:5 crop, natural light, no stock imagery]</span>
+      </div>
+      <div class="signature">
+        <img src="assets/signature.png" alt="" onerror="this.style.display='none';this.parentNode.classList.add('is-empty')">
+        <span class="sig-ph" data-i18n="hero.signature">[Signature — sign in black ink on white paper, scan or photograph it, save as a transparent PNG at assets/signature.png]</span>
+      </div>
+      <figcaption data-i18n="hero.photoCap">[First Name Last Name] — Aventress Ltd, London</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- trust strip -->
+<div class="trustbar">
+  <div class="wrap trustbar-inner">
+    <span data-i18n="trust.1">10+ years in UK company administration</span>
+    <span data-i18n="trust.2">Works alongside your accountant</span>
+    <span data-i18n="trust.3">English and Polish</span>
+    <span data-i18n="trust.4">Reply within [response time]</span>
+  </div>
+</div>
+
+<!-- ============ 2. FIT — qualification, not problem-education ============ -->
+<section class="section section-tint" id="fit">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">01</span>
+      <span class="sec-kicker" data-i18n="fit.eyebrow">Is this you?</span>
+    </div>
+
+    <div class="sec-intro">
+      <h2 class="h2" data-i18n="fit.h2">You've already decided the admin has to go. The question is who takes it.</h2>
+    </div>
+
+    <ol class="fit-list">
+      <li class="fit-row">
+        <span class="fit-num">i</span>
+        <div class="fit-body">
+          <blockquote data-i18n="fit.1.h">“My accountant files the returns. Nobody does everything around them.”</blockquote>
+          <p class="fit-note" data-i18n="fit.1.p">[Placeholder — one line: what I take over in this case, and that I work directly with the accountant so nothing is duplicated.]</p>
+        </div>
+      </li>
+      <li class="fit-row">
+        <span class="fit-num">ii</span>
+        <div class="fit-body">
+          <blockquote data-i18n="fit.2.h">“There isn't enough work for a full-time office manager — but there's too much for me.”</blockquote>
+          <p class="fit-note" data-i18n="fit.2.p">[Placeholder — one line: typical scope for a company this size, and roughly how many hours a month it replaces.]</p>
+        </div>
+      </li>
+      <li class="fit-row">
+        <span class="fit-num">iii</span>
+        <div class="fit-body">
+          <blockquote data-i18n="fit.3.h">“I tried a VA. I had to explain what a Confirmation Statement was.”</blockquote>
+          <p class="fit-note" data-i18n="fit.3.p">[Placeholder — one line: the difference is UK compliance knowledge — no training period, no supervision needed.]</p>
+        </div>
+      </li>
+      <li class="fit-row">
+        <span class="fit-num">iv</span>
+        <div class="fit-body">
+          <blockquote data-i18n="fit.4.h">“We've grown to eight people and nothing is written down.”</blockquote>
+          <p class="fit-note" data-i18n="fit.4.p">[Placeholder — one line: onboarding, employee records and written procedures, so the business isn't held together by memory.]</p>
+        </div>
+      </li>
+    </ol>
+
+    <ul class="sectors">
+      <li>
+        <span class="sector-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><path d="M8 34h32M12 34V22l12-8 12 8v12"/><path d="M20 34v-8h8v8"/></svg>
+        </span>
+        <span data-i18n="sector.1">Construction & trades</span>
+      </li>
+      <li>
+        <span class="sector-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><path d="M24 12v24M12 24h24"/><rect x="8" y="8" width="32" height="32"/></svg>
+        </span>
+        <span data-i18n="sector.2">Clinics & practices</span>
+      </li>
+      <li>
+        <span class="sector-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><circle cx="18" cy="18" r="6"/><circle cx="32" cy="21" r="5"/><path d="M8 38c0-6 4.5-10 10-10s10 4 10 10M28 38c0-5 3.5-8 8-8s6 3 6 8"/></svg>
+        </span>
+        <span data-i18n="sector.3">Family businesses</span>
+      </li>
+      <li>
+        <span class="sector-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><rect x="8" y="16" width="32" height="22"/><path d="M18 16v-5h12v5M8 26h32"/></svg>
+        </span>
+        <span data-i18n="sector.4">Professional services</span>
+      </li>
+    </ul>
+
+  </div>
+</section>
+
+<!-- ============ 3. HOW IT WORKS — onboarding, with timings ============ -->
+<section class="section" id="how">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">02</span>
+      <span class="sec-kicker" data-i18n="how.eyebrow">How it works</span>
+    </div>
+
+    <div class="sec-intro">
+      <h2 class="h2" data-i18n="how.h2">Handover takes [timeframe]. After that it runs in the background.</h2>
+    </div>
+
+    <!-- schematic: where the paperwork actually travels -->
+    <figure class="flow">
+      <figcaption class="flow-cap" data-i18n="flow.cap">Where the paperwork goes</figcaption>
+      <ol class="flow-track">
+        <li class="flow-node">
+          <span class="flow-mark" aria-hidden="true">
+            <svg viewBox="0 0 44 44"><rect x="9" y="12" width="26" height="22"/><path d="M9 19h26M17 12V8M27 12V8"/></svg>
+          </span>
+          <span class="flow-label" data-i18n="flow.1">Your business</span>
+          <span class="flow-sub" data-i18n="flow.1s">post, invoices, receipts</span>
+        </li>
+        <li class="flow-node flow-node-us">
+          <span class="flow-mark" aria-hidden="true">
+            <svg viewBox="0 0 44 44"><rect x="8" y="10" width="28" height="26"/><path d="M14 18h16M14 24h16M14 30h10"/></svg>
+          </span>
+          <span class="flow-label" data-i18n="flow.2">Aventress</span>
+          <span class="flow-sub" data-i18n="flow.2s">sorted, checked, tracked</span>
+        </li>
+        <li class="flow-node">
+          <span class="flow-mark" aria-hidden="true">
+            <svg viewBox="0 0 44 44"><path d="M10 34V14l12-6 12 6v20z"/><path d="M18 34V23h8v11"/></svg>
+          </span>
+          <span class="flow-label" data-i18n="flow.3">Your accountant</span>
+          <span class="flow-sub" data-i18n="flow.3s">complete records, on time</span>
+        </li>
+        <li class="flow-node">
+          <span class="flow-mark" aria-hidden="true">
+            <svg viewBox="0 0 44 44"><rect x="9" y="11" width="26" height="24"/><path d="M15 19h14M15 25h14M15 31h8"/><path d="M22 4v7"/></svg>
+          </span>
+          <span class="flow-label" data-i18n="flow.4">HMRC · Companies House</span>
+          <span class="flow-sub" data-i18n="flow.4s">filed by your accountant</span>
+        </li>
+      </ol>
+    </figure>
+
+    <ol class="steps">
+      <li class="step">
+        <div class="step-top">
+          <span class="step-num" data-i18n="how.1.num">Step 01 · [when]</span>
+          <span class="mark-art" aria-hidden="true">
+            <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="13"/><path d="M20 12v8l6 4"/></svg>
+          </span>
+        </div>
+        <h3 data-i18n="how.1.h">A short call, then a written scope</h3>
+        <p class="step-lead" data-i18n="how.1.p">[Placeholder — 20 minutes on the phone, no prep. Say what you send afterwards and how long it takes — fill in your own timeframe.]</p>
+        <p class="fine" data-i18n="how.1.fine">What's in scope, what stays with your accountant, and how we'd work together.</p>
+      </li>
+      <li class="step">
+        <div class="step-top">
+          <span class="step-num" data-i18n="how.2.num">Step 02 · [when]</span>
+          <span class="mark-art" aria-hidden="true">
+            <svg viewBox="0 0 40 40"><rect x="7" y="11" width="26" height="7"/><rect x="7" y="18" width="26" height="7"/><rect x="7" y="25" width="26" height="7"/></svg>
+          </span>
+        </div>
+        <h3 data-i18n="how.2.h">I take the admin off you</h3>
+        <p class="step-lead" data-i18n="how.2.p">[Placeholder — what handover involves: access, filing structure, deadline calendar, introduction to your accountant. Say how much of their time it needs — one session, not a project.]</p>
+        <p class="fine" data-i18n="how.2.fine">Companies House and HMRC dates mapped, documents organised, correspondence redirected.</p>
+      </li>
+      <li class="step">
+        <div class="step-top">
+          <span class="step-num" data-i18n="how.3.num">Step 03 · every month</span>
+          <span class="mark-art" aria-hidden="true">
+            <svg viewBox="0 0 40 40"><rect x="7" y="10" width="26" height="23"/><path d="M7 17h26M14 10V7M26 10V7"/><path d="M15 25l3.5 3.5L26 21"/></svg>
+          </span>
+        </div>
+        <h3 data-i18n="how.3.h">It runs, and you get a summary</h3>
+        <p class="step-lead" data-i18n="how.3.p">[Placeholder — what lands in their inbox each month and what they need to decide. Emphasise that nothing needs chasing from their side.]</p>
+        <p class="fine" data-i18n="how.3.fine">Done, upcoming, anything needing your signature or decision — on one page.</p>
+      </li>
+    </ol>
+
+    <aside class="promise">
+      <span class="promise-label" data-i18n="promise.label">Working with me</span>
+      <div class="promise-body">
+        <h3 data-i18n="promise.h">One person, one inbox, [your response time]</h3>
+        <p data-i18n="promise.p">[Placeholder — no account managers, no handover between staff, no ticket queue. State the response time you can genuinely hold every week, not your best week — this is the reassurance that closes the decision.]</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ 4. WHAT'S INCLUDED ============ -->
+<section class="section section-tint" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">03</span>
+      <span class="sec-kicker" data-i18n="svc.eyebrow">What's included</span>
+    </div>
+
+    <div class="sec-intro">
+      <h2 class="h2" data-i18n="svc.h2">Exactly what I take on — and what stays with your accountant</h2>
+    </div>
+
+    <div class="svc-stack">
+      <article class="svc-block">
+        <div class="svc-side">
+          <span class="svc-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><rect x="8" y="12" width="32" height="28"/><path d="M8 21h32M18 12V6M30 12V6"/><path d="M17 30l4.5 4.5L32 24"/></svg>
+          </span>
+          <span class="svc-idx">3.1</span>
+          <h3 data-i18n="svc.1.h">Deadlines & compliance</h3>
+        </div>
+        <ul class="svc-list">
+          <li data-i18n="svc.1.l1">HMRC and Companies House deadline monitoring</li>
+          <li data-i18n="svc.1.l2">Confirmation Statement (CS01) — data prepared and checked</li>
+          <li data-i18n="svc.1.l3">correspondence and liaison with HMRC and Companies House</li>
+          <li data-i18n="svc.1.l4">company records and statutory documentation kept current</li>
+        </ul>
+      </article>
+
+      <article class="svc-block">
+        <div class="svc-side">
+          <span class="svc-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path d="M10 8h20l8 8v24H10z"/><path d="M30 8v8h8"/><path d="M17 26h14M17 32h9"/></svg>
+          </span>
+          <span class="svc-idx">3.2</span>
+          <h3 data-i18n="svc.2.h">Finance admin & accountant liaison</h3>
+        </div>
+        <ul class="svc-list">
+          <li data-i18n="svc.2.l1">VAT return documents collected, checked and prepared</li>
+          <li data-i18n="svc.2.l2">PAYE and payroll data prepared each month</li>
+          <li data-i18n="svc.2.l3">CT600 data prepared for your accountant</li>
+          <li data-i18n="svc.2.l4">invoicing, payment tracking and chasing overdue accounts</li>
+          <li data-i18n="svc.2.l5">day-to-day liaison with your accountant or bookkeeper</li>
+        </ul>
+      </article>
+
+      <article class="svc-block">
+        <div class="svc-side">
+          <span class="svc-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path d="M8 14h13l4 5h15v21H8z"/><path d="M15 28h18"/></svg>
+          </span>
+          <span class="svc-idx">3.3</span>
+          <h3 data-i18n="svc.3.h">Office operations & people admin</h3>
+        </div>
+        <ul class="svc-list">
+          <li data-i18n="svc.3.l1">document organisation, filing structure and archiving</li>
+          <li data-i18n="svc.3.l2">inbox and correspondence management</li>
+          <li data-i18n="svc.3.l3">day-to-day administrative support</li>
+          <li data-i18n="svc.3.l4">employee records and onboarding for new staff</li>
+          <li data-i18n="svc.3.l5">written administrative procedures your team can follow</li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- Pricing panel removed for now. To restore: re-add a .two-up wrapper around
+         a .panel.pricing block and this note — CSS for both is still in styles.css. -->
+    <p class="disclaimer">
+      <span class="disc-label" data-i18n="svc.disc.label">What I don't do</span>
+      <strong data-i18n="svc.disc.h">I work alongside your accountant, never instead of them.</strong>
+      <span data-i18n="svc.disc.p">I prepare, organise, monitor and liaise with HMRC and Companies House. I don't file returns, sign off accounts or give tax advice — your accountancy practice does that, and I make their job easier by handing over complete records on time.</span>
+    </p>
+  </div>
+</section>
+
+<!-- ============ 5. COMPARE — the actual shortlist ============ -->
+<section class="section" id="compare">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">04</span>
+      <span class="sec-kicker" data-i18n="why.eyebrow">How I compare</span>
+    </div>
+
+    <div class="sec-intro">
+      <h2 class="h2" data-i18n="why.h2">The four options on your desk right now</h2>
+    </div>
+
+    <div class="why-grid">
+      <div class="panel why-alt">
+        <span class="alt-tag" data-i18n="why.2.tag">Option A</span>
+        <h3 data-i18n="why.2.h">A full-time office manager</h3>
+        <p class="why-line" data-i18n="why.2.p">£30,000+ a year plus NI, pension, holiday cover and the time it takes to recruit.</p>
+        <p class="fine" data-i18n="why.2.fine">[Placeholder — one line: the right answer above a certain size — say roughly where that line is.]</p>
+      </div>
+      <div class="panel why-alt">
+        <span class="alt-tag" data-i18n="why.3.tag">Option B</span>
+        <h3 data-i18n="why.3.h">A general VA</h3>
+        <p class="why-line" data-i18n="why.3.p">Cheaper per hour, but you supply the UK compliance knowledge — and the supervision.</p>
+        <p class="fine" data-i18n="why.3.fine">[Placeholder — one line: fine for inbox and diary work; the risk starts at statutory deadlines.]</p>
+      </div>
+      <div class="panel why-alt">
+        <span class="alt-tag" data-i18n="why.4.tag">Option C</span>
+        <h3 data-i18n="why.4.h">Keeping it yourself</h3>
+        <p class="why-line" data-i18n="why.4.p">Free until it isn't — a missed filing date, a late invoice, another weekend gone.</p>
+        <p class="fine" data-i18n="why.4.fine">[Placeholder — one line: current Companies House and HMRC penalty amounts make this concrete.]</p>
+      </div>
+    </div>
+
+    <div class="why-us">
+      <div class="why-us-head">
+        <span class="alt-tag alt-tag-us" data-i18n="why.badge">Aventress</span>
+        <h3 data-i18n="why.us.h">Compliance-aware admin, one named person, fixed monthly fee</h3>
+      </div>
+      <div class="why-us-body">
+        <p data-i18n="why.us.p">[Placeholder — 2 sentences: the position in plain words. Ongoing support from someone who already knows UK company admin, at a fraction of an employee, with no training period.]</p>
+        <ul class="why-points">
+          <li data-i18n="why.us.l1">I already know CS01 from CT600 — nothing to teach, no supervision needed.</li>
+          <li data-i18n="why.us.l2">An ongoing monthly arrangement, not hours you have to keep buying.</li>
+          <li data-i18n="why.us.l3">I read the HMRC letter and explain what it actually means — in English or Polish.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ statement band — full-bleed break in the rhythm ============ -->
+<section class="statement">
+  <div class="wrap statement-inner">
+    <p class="statement-line" data-i18n="statement.line">
+      [Placeholder — one line, said plainly. The thought the reader should leave with,
+      e.g. that the paperwork is not the business, it just behaves like it.]
+    </p>
+    <a class="statement-cta" href="#contact" data-i18n="statement.cta">Let's talk it through →</a>
+  </div>
+</section>
+
+<!-- ============ 6. ABOUT + PROOF ============ -->
+<section class="section section-tint" id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">05</span>
+      <span class="sec-kicker" data-i18n="about.eyebrow">Who you'd be working with</span>
+    </div>
+
+    <h2 class="h2 about-h2" data-i18n="about.h2">I'm [First Name Last Name]</h2>
+
+    <div class="about-grid">
+      <figure class="about-photo">
+        <div class="photo-frame photo-wide">
+          <img src="assets/workspace.jpg" alt="" onerror="this.style.display='none';this.parentNode.classList.add('is-empty')">
+          <span class="photo-ph" data-i18n="about.photo">[Photo — desk, documents, 3:2 landscape crop. A real workspace, not stock.]</span>
+        </div>
+        <figcaption data-i18n="about.photoCap">Photo — workspace, London</figcaption>
+      </figure>
+
+      <div class="about-copy">
+        <p class="credibility" data-i18n="about.cred">
+          10+ years running administration for UK companies — VAT, PAYE, CT600, Companies House
+          filings and everything around them.
+        </p>
+        <p class="prose" data-i18n="about.p1">[Placeholder — 2–3 sentences: where the experience comes from (in-house? practice? how many companies?), the kind of business you work with best, and why you set up on your own. Concrete beats warm here — they're deciding whether to trust you with company records.]</p>
+        <p class="recommended" data-i18n="about.recommended">Most of my clients come to me by recommendation from other business owners and their accountants.</p>
+      </div>
+    </div>
+
+    <ul class="creds">
+      <li><span class="cred-key" data-i18n="creds.1.k">Registered</span><span class="cred-val" data-i18n="creds.1.v">[Companies House no. + ICO registration no.]</span></li>
+      <li><span class="cred-key" data-i18n="creds.2.k">Insured</span><span class="cred-val" data-i18n="creds.2.v">[Professional indemnity cover — insurer and amount]</span></li>
+      <li><span class="cred-key" data-i18n="creds.3.k">Software</span><span class="cred-val" data-i18n="creds.3.v">[Xero · QuickBooks · Sage — whichever you actually use]</span></li>
+      <li><span class="cred-key" data-i18n="creds.4.k">Data</span><span class="cred-val" data-i18n="creds.4.v">[How documents are stored and who can see them — GDPR in one line]</span></li>
+    </ul>
+
+    <div class="quotes">
+      <figure class="panel quote">
+        <blockquote data-i18n="quote.1">“[Placeholder — a quote about the decision, not the service. Ideally: what they were worried about before hiring, and what changed after. Specific beats glowing.]”</blockquote>
+        <figcaption><strong data-i18n="quote.1.n">[Name]</strong> <span data-i18n="quote.1.c">[role, sector, company size, London]</span></figcaption>
+      </figure>
+      <figure class="panel quote">
+        <blockquote data-i18n="quote.2">“[Placeholder — second quote from a different client type — construction, clinic or family firm — so both audiences see themselves. A number in it is worth more than an adjective.]”</blockquote>
+        <figcaption><strong data-i18n="quote.2.n">[Name]</strong> <span data-i18n="quote.2.c">[role, sector, company size, London]</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. FAQ — the last objections ============ -->
+<section class="section" id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">06</span>
+      <span class="sec-kicker" data-i18n="faq.eyebrow">Before we talk</span>
+    </div>
+
+    <div class="sec-intro">
+      <h2 class="h2" data-i18n="faq.h2">The questions that come up on every first call</h2>
+    </div>
+
+    <div class="faq-grid">
+      <div class="faq-item">
+        <h3 data-i18n="faq.1.q">Are you an accountant?</h3>
+        <p data-i18n="faq.1.a">[Placeholder — no, and say plainly what that means: administration and back office, not filing returns or tax advice. This is a trust question, not a technicality.]</p>
+      </div>
+      <div class="faq-item">
+        <h3 data-i18n="faq.2.q">Can you work with the accountant we already have?</h3>
+        <p data-i18n="faq.2.a">[Placeholder — yes, that's the normal arrangement. One line on how the handover to them works each month.]</p>
+      </div>
+      <div class="faq-item">
+        <h3 data-i18n="faq.3.q">Is there a contract or a minimum term?</h3>
+        <p data-i18n="faq.3.a">[Placeholder — state the notice period and that there's no lock-in. Removing this risk is what gets the call booked.]</p>
+      </div>
+      <div class="faq-item">
+        <h3 data-i18n="faq.4.q">How do you handle our documents and data?</h3>
+        <p data-i18n="faq.4.a">[Placeholder — where documents live, who has access, ICO registration and what happens to everything if we stop working together.]</p>
+      </div>
+      <div class="faq-item">
+        <h3 data-i18n="faq.5.q">What if we only need part of this?</h3>
+        <p data-i18n="faq.5.a">[Placeholder — scope can start with one area and grow. Give an example of a smaller starting package.]</p>
+      </div>
+      <div class="faq-item">
+        <h3 data-i18n="faq.6.q">Do you work with companies outside London?</h3>
+        <p data-i18n="faq.6.a">[Placeholder — remote across the UK, with in-person meetings in London if wanted. Mention the languages you work in.]</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8. CONTACT ============ -->
+<section class="section section-ink" id="contact">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">07</span>
+      <span class="sec-kicker" data-i18n="contact.eyebrow">Let's talk</span>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-copy">
+        <h2 class="h2" data-i18n="contact.h2">Tell me what's on your plate.<br>Twenty minutes, no commitment.</h2>
+
+        <ul class="call-steps">
+          <li data-i18n="contact.s1">You describe what currently lands on your desk.</li>
+          <li data-i18n="contact.s2">I tell you what I'd take over — and what I wouldn't.</li>
+          <li data-i18n="contact.s3">If it's a fit, you get the scope in writing. [Placeholder — your timeframe.]</li>
+        </ul>
+
+        <ul class="contact-direct">
+          <li>
+            <span class="cd-label" data-i18n="contact.mail">Email</span>
+            <a href="mailto:hello@aventress.co.uk">hello@aventress.co.uk</a>
+          </li>
+          <li>
+            <span class="cd-label" data-i18n="contact.phone">Phone</span>
+            <a href="tel:+440000000000">+44 0000 000 000</a>
+          </li>
+          <li>
+            <span class="cd-label" data-i18n="contact.hours">Hours</span>
+            <span data-i18n="contact.hoursVal">[Placeholder — e.g. Mon–Fri, 9:00–17:00]</span>
+          </li>
+          <li>
+            <span class="cd-label" data-i18n="contact.gbpLabel">Google</span>
+            <a href="#" target="_blank" rel="noopener" data-i18n="contact.gbp">Business profile on Google</a>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <p class="form-head" data-i18n="form.head">Send a message</p>
+        <div class="field">
+          <label for="f-name" data-i18n="form.name">Your name</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="f-company" data-i18n="form.company">Company <span class="opt" data-i18n="form.optional">(and roughly how many staff)</span></label>
+          <input id="f-company" name="company" type="text" autocomplete="organization">
+        </div>
+        <div class="field">
+          <label for="f-email" data-i18n="form.email">Email</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="f-msg" data-i18n="form.msg">What would you hand over first?</label>
+          <textarea id="f-msg" name="message" rows="4" data-i18n-ph="form.msgPh" placeholder="[Placeholder — e.g. deadlines and Companies House, plus invoicing — we have an accountant already]"></textarea>
+        </div>
+        <button class="btn btn-paper btn-full" type="submit" data-i18n="form.submit">Send message</button>
+        <p class="form-note" data-i18n="form.note">[Placeholder — one line: I reply personally, within your stated response time. No newsletter, no follow-up sequence.]</p>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="f-col f-brand">
+      <span class="logo-mark" aria-hidden="true">A</span>
+      <span class="logo-text">Aventress Ltd</span>
+      <p class="f-tag" data-i18n="footer.tag">[Placeholder — one line: ongoing administrative and back-office support for small UK limited companies. London, in English and Polish.]</p>
+    </div>
+
+    <div class="f-col">
+      <h4 data-i18n="footer.company">Company details</h4>
+      <p><span class="f-key" data-i18n="footer.crn">Company number</span><span class="f-val">[00000000]</span></p>
+      <p><span class="f-key" data-i18n="footer.office">Registered office</span><span class="f-val">[street, London, postcode]</span></p>
+      <p><span class="f-key" data-i18n="footer.sic">SIC</span><span class="f-val">82110 · 82990</span></p>
+    </div>
+
+    <div class="f-col">
+      <h4 data-i18n="footer.nav">On this page</h4>
+      <a href="#services" data-i18n="nav.services">What's included</a>
+      <a href="#how" data-i18n="nav.how">How it works</a>
+      <a href="#compare" data-i18n="nav.why">Compare</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </div>
+
+    <div class="f-col">
+      <h4 data-i18n="footer.legal">Information</h4>
+      <a href="#" data-i18n="footer.privacy">Privacy policy</a>
+      <p class="f-fine" data-i18n="footer.disclaimer">[Placeholder — note: Aventress Ltd provides administrative and back-office services. It is not an accountancy practice, tax adviser or regulated financial services firm.]</p>
+    </div>
+  </div>
+
+  <div class="wrap footer-bottom">
+    <span>© <span id="year">2026</span> Aventress Ltd</span>
+    <span data-i18n="footer.rights">All rights reserved.</span>
+  </div>
+</footer>
+
+<script src="script.js?v=15"></script>
+</body>
+</html>
