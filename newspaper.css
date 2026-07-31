@@ -285,11 +285,11 @@
 }
 .newspaper-concept .why-us{
   margin-top:0;
-  background:var(--ink);
+  background:var(--green);
   border-top:0;
 }
 .newspaper-concept .statement{
-  background:var(--green);
+  background:var(--ink);
   border-top:4px double var(--paper);
   border-bottom:4px double var(--paper);
 }
