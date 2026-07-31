@@ -4,10 +4,10 @@
 
 .newspaper-concept{
   --paper:#eee8da;
-  --paper-2:var(--paper);
-  --sage:var(--paper);
-  --sage-2:var(--paper);
-  --card:var(--paper);
+  --paper-2:#e4ddcd;
+  --sage:var(--paper-2);
+  --sage-2:var(--paper-2);
+  --card:#f1ebdc;
   --ink:#171714;
   --ink-2:var(--ink);
   --ink-3:var(--ink);
@@ -37,9 +37,9 @@
   color:var(--ink);
 }
 
-.newspaper-concept .section-tint{background:var(--paper)}
+.newspaper-concept .section-tint{background:var(--paper-2)}
 .newspaper-concept .section-ink{background:var(--ink)}
-.newspaper-concept .panel{background:var(--paper);border-color:var(--ink)}
+.newspaper-concept .panel{background:var(--card);border-color:var(--ink)}
 .newspaper-concept .h-display,
 .newspaper-concept .h2,
 .newspaper-concept .fit-row blockquote,
@@ -119,8 +119,8 @@
 }
 .newspaper-concept .header-actions .btn-sm{
   border-color:var(--ink);
-  background:transparent;
-  color:var(--ink);
+  background:var(--ink);
+  color:var(--paper);
   font-family:var(--mono);
   font-size:.66rem;
   letter-spacing:.08em;
@@ -179,8 +179,8 @@
   border-color:var(--ink);
 }
 .newspaper-concept .hero-cta .btn{
-  background:var(--green);
-  border-color:var(--green);
+  background:var(--ink);
+  border-color:var(--ink);
   color:var(--paper);
   font-family:var(--mono);
   font-size:.72rem;
